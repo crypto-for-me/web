@@ -1,0 +1,32 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".vscode": true,
+        "static/css/nacht.css.map": true,
+        "static/css/nacht.css": true,
+        "static/css/base.css": true,
+        "static/css/base.css.map": true,
+        "node_modules": true,
+        "dist": true,
+        "static/css/output.css.map": true,
+        "static/css/main.css": true,
+        "static/css/main.css.map": true
+    },
+    "hide-files.files": [
+        ".vscode",
+        "static/css/nacht.css.map",
+        "static/css/nacht.css",
+        "static/css/base.css",
+        "static/css/base.css.map",
+        "node_modules",
+        "dist",
+        "static/css/output.css.map",
+        "static/css/main.css",
+        "static/css/main.css.map"
+    ]
+}

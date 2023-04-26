@@ -1,11 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 html {
   scroll-behavior: smooth;
 }
 
 * {
+  font-family: "Inter", sans-serif;
+  color: #fcfdfd;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,4 +14,14 @@ html {
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 1rem;
+  background: #1d181e;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

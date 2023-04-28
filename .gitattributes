@@ -1,2 +1,2 @@
-# Markdown
-*.css linguist-detectable=false
+*.css linguist-vendored=false
+*.min.js linguist-vendored=false

@@ -8,17 +8,28 @@ html {
   font-family: "Inter", sans-serif;
   color: #fcfdfd;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   outline: none;
   border: none;
   background: none;
 }
+* :focus-visible {
+  outline: 2px dashed #ff86f1;
+}
+
 body {
   margin: 1rem 2rem;
   background: #151526;
 }
 
+body > div.wrapper {
+  min-height: 500px;
+}
+
+@media (max-width: 700px) {
+  body > div.wrapper {
+    min-height: auto;
+  }
+}
 main {
   max-width: 800px;
   margin: 3rem auto;

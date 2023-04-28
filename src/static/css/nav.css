@@ -82,4 +82,9 @@ nav #menu {
   nav #menu.active {
     transform: rotate(90deg);
   }
+}
+@media (max-width: 400px) {
+  nav h1 {
+    display: none;
+  }
 }/*# sourceMappingURL=nav.css.map */

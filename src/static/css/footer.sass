@@ -5,12 +5,18 @@ footer
     max-width: 800px
 
     div.rows
-        display: flex
-        align-items: flex-start
+        display: grid
+        grid-auto-flow: column
+        justify-content: space-between
         margin-bottom: 2rem
 
         div.row
-            width: 100%
+            margin-right: 1.5rem
+            margin-bottom: 0.5rem
+
+            &:last-child
+                margin-right: 0
+                margin-bottom: 0
 
             h2
                 opacity: 1
@@ -23,10 +29,24 @@ footer
                 display: block
                 text-decoration: none
                 transition: opacity 0.2s
-                line-height: 2
+                margin-bottom: 1rem
 
                 &:hover
                     opacity: 0.9
 
     p
         opacity: 0.7
+
+@media (max-width: 1000px)
+    footer
+        div.rows
+            grid-auto-flow: row
+            grid-template-columns: repeat(2, 1fr)
+
+            div.row
+                margin-bottom: 1rem
+
+@media (max-width: 600px)
+    footer
+        div.rows
+            grid-template-columns: 1fr

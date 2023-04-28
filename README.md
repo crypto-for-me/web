@@ -1,7 +1,7 @@
 # 🪙 [CryptoForMe](https://crypto-for.me) Website
 Built with:
 - Flask
-- A self-made CSS framewor
+- A self-made CSS framework
 
 ## 📦 Getting started  
 Requirements:

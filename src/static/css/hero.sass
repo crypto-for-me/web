@@ -1,7 +1,6 @@
 @import '_vars'
 
 header
-    height: 70vh
     max-width: 800px
     margin: 0 auto
 
@@ -32,7 +31,11 @@ header
 
 @media (max-width: 800px)
     header
-        height: 60vh
-
         h2
             font-size: 46px
+
+@media (max-width: 400px)
+    header
+        div.buttons
+            flex-direction: column
+            gap: 0.5rem

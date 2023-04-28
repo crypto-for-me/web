@@ -1,1 +1,37 @@
-/*# sourceMappingURL=hero.css.map */
+header {
+  height: 70vh;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h2 {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 2rem;
+  line-height: 1.1;
+}
+header p {
+  max-width: 80%;
+  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+header div.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 60vh;
+  }
+  header h2 {
+    font-size: 46px;
+  }
+}/*# sourceMappingURL=hero.css.map */

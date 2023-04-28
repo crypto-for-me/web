@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/static/css/main.css" rel="stylesheet">
-    <script src="/static/js/theme.js"></script>
+
+    {% for css in 'hero main nav input footer'.split() %}
+    <link href="/static/css/{{ css }}.css" rel="stylesheet">
+    {% endfor %}
+
+    <script src="/static/js/menu.js"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <title>CryptoForMe</title>
 </head>
 
 <body class="dark">
+{% include 'components/nav.html' %}

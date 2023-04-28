@@ -1,0 +1,25 @@
+button {
+  color: #151526;
+  cursor: pointer;
+  font-size: 16px;
+  background: #ff86f1;
+  border-radius: 8px;
+  padding: 0.9rem 1.5rem;
+}
+button:hover {
+  filter: brightness(1.2);
+}
+button.secondary {
+  background: #151526;
+  color: #ff86f1;
+  border: 1px solid #ff86f1;
+}
+
+input {
+  color: #fcfdfd;
+  font-size: 16px;
+  background: #151526;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ff86f1;
+}/*# sourceMappingURL=input.css.map */

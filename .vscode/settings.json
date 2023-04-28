@@ -11,7 +11,13 @@
         "src/static/css/nav.css.map": true,
         "src/static/css/nav.css": true,
         "src/static/css/hero.css": true,
-        "src/static/css/hero.css.map": true
+        "src/static/css/hero.css.map": true,
+        "src/static/css/main.css.map": true,
+        "src/static/css/main.css": true,
+        "src/static/css/input.css": true,
+        "src/static/css/input.css.map": true,
+        "src/static/css/footer.css": true,
+        "src/static/css/footer.css.map": true
     },
     "hide-files.files": [
         "src/package-lock.json",
@@ -19,6 +25,12 @@
         "src/static/css/nav.css.map",
         "src/static/css/nav.css",
         "src/static/css/hero.css",
-        "src/static/css/hero.css.map"
+        "src/static/css/hero.css.map",
+        "src/static/css/main.css.map",
+        "src/static/css/main.css",
+        "src/static/css/input.css",
+        "src/static/css/input.css.map",
+        "src/static/css/footer.css",
+        "src/static/css/footer.css.map"
     ]
 }

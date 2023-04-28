@@ -1,1 +1,85 @@
-/*# sourceMappingURL=nav.css.map */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav > .logo {
+  stroke: #ff86f1;
+  min-height: 48px;
+  min-width: 48px;
+  height: 48px;
+  width: 48px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: stroke 0.2s;
+}
+nav > h1 {
+  font-weight: 500;
+  font-size: 24px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+nav > h1 mark {
+  font-size: 1rem;
+  position: relative;
+  top: -3px;
+}
+nav > span {
+  flex-grow: 1;
+}
+nav #links > a {
+  margin-left: 2rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav #links > a:hover {
+  color: #ff86f1;
+}
+nav #menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  nav .logo {
+    stroke: #fcfdfd;
+  }
+  nav #links {
+    transform: scale(0.8) translateX(1rem);
+    opacity: 0;
+    z-index: 100;
+    width: 200px;
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background: rgba(25, 25, 42, 0.8235294118);
+    padding: 1rem 0;
+    border-radius: 8px;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    border: 1px solid rgba(135, 135, 141, 0.3254901961);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  nav #links.open {
+    opacity: 1;
+    transform: inherit;
+  }
+  nav #links a {
+    font-size: 20px;
+    display: block;
+    line-height: 3rem;
+  }
+  nav #menu {
+    display: block;
+    min-height: 32px;
+    min-width: 32px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  nav #menu.active {
+    transform: rotate(90deg);
+  }
+}/*# sourceMappingURL=nav.css.map */

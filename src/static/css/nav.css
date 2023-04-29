@@ -3,21 +3,19 @@ nav {
   align-items: center;
 }
 nav > .logo {
-  stroke: #ff86f1;
-  min-height: 48px;
-  min-width: 48px;
-  height: 48px;
-  width: 48px;
+  stroke: #d979f9;
+  min-height: 40px;
+  min-width: 40px;
+  height: 40px;
+  width: 40px;
   margin-right: 8px;
   cursor: pointer;
   transition: stroke 0.2s;
 }
 nav > h1 {
   font-weight: 500;
-  font-size: 24px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  font-size: 20px;
+  user-select: none;
   cursor: pointer;
 }
 nav > h1 mark {
@@ -29,12 +27,14 @@ nav > span {
   flex-grow: 1;
 }
 nav #links > a {
+  font-size: 14px;
+  font-weight: 600;
   margin-left: 2rem;
   text-decoration: none;
-  transition: color 0.2s;
+  transition: color 0.1s;
 }
 nav #links > a:hover {
-  color: #ff86f1;
+  color: #d979f9;
 }
 nav #menu {
   display: none;
@@ -53,11 +53,10 @@ nav #menu {
     position: absolute;
     top: 5rem;
     right: 2rem;
-    background: rgba(25, 25, 42, 0.8235294118);
+    background: rgba(27, 31, 55, 0.9333333333);
     padding: 1rem 0;
     border-radius: 8px;
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     border: 1px solid rgba(135, 135, 141, 0.3254901961);
     transition: transform 0.2s, opacity 0.2s;
   }

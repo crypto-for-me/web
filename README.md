@@ -1,16 +1,16 @@
 # 🪙 [CryptoForMe](https://crypto-for.me) Website
 Built with:
 - Flask
-- A self-made CSS framework
+- A self-made CSS framework (inspired by Tailwind CSS)
 
 ## 📦 Getting started  
 Requirements:
 - Node.js (including `npm` and `npx`)
 - Python 3.8+ (including `pip`)
 
-Update your Python dependencies using:
+Set the required environment variables:
 ```bash
-pip install -r requirements.txt
+PYTHON_BIN="python" # Path to your Python binary
 ```
 
 ## 🏗️ Development

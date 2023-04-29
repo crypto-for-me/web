@@ -1,11 +1,11 @@
 footer {
+  padding-top: 4rem;
   margin: 4rem auto;
-  max-width: 800px;
+  max-width: 1280px;
 }
 footer div.rows {
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
   margin-bottom: 2rem;
 }
 footer div.rows div.row {
@@ -23,14 +23,15 @@ footer div.rows div.row h2 {
   margin-bottom: 1rem;
 }
 footer div.rows div.row a {
-  opacity: 0.7;
+  width: fit-content;
+  font-size: 14px;
+  opacity: 0.6;
   display: block;
   text-decoration: none;
-  transition: opacity 0.2s;
   margin-bottom: 1rem;
 }
 footer div.rows div.row a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 footer p {
   opacity: 0.7;

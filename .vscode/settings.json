@@ -17,7 +17,9 @@
         "src/static/css/input.css": true,
         "src/static/css/input.css.map": true,
         "src/static/css/footer.css": true,
-        "src/static/css/footer.css.map": true
+        "src/static/css/footer.css.map": true,
+        "src/static/css/countdown.css.map": true,
+        "src/static/css/countdown.css": true
     },
     "hide-files.files": [
         "src/package-lock.json",
@@ -31,6 +33,8 @@
         "src/static/css/input.css",
         "src/static/css/input.css.map",
         "src/static/css/footer.css",
-        "src/static/css/footer.css.map"
+        "src/static/css/footer.css.map",
+        "src/static/css/countdown.css.map",
+        "src/static/css/countdown.css"
     ]
 }

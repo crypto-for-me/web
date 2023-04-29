@@ -1,13 +1,14 @@
 @import '_vars'
 
 footer
+    padding-top: 4rem
     margin: 4rem auto
-    max-width: 800px
+    max-width: $main-width
 
     div.rows
         display: grid
         grid-auto-flow: column
-        justify-content: space-between
+        // justify-content: space-between
         margin-bottom: 2rem
 
         div.row
@@ -25,14 +26,15 @@ footer
                 margin-bottom: 1rem
 
             a
-                opacity: 0.7
+                width: fit-content
+                font-size: 14px
+                opacity: 0.6
                 display: block
                 text-decoration: none
-                transition: opacity 0.2s
                 margin-bottom: 1rem
 
                 &:hover
-                    opacity: 0.9
+                    opacity: 0.8
 
     p
         opacity: 0.7

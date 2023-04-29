@@ -1,15 +1,11 @@
-# This is not the runner for nodes!
-# This is the runner for the Flask server!
+#!/bin/sh
 
-echo "Please enter your sudo password if asked."
-sudo echo "Done. Server can start."
-
-python -m pip install -r requirements.txt
+$PYTHON_BIN -m pip install -r requirements.txt
 
 while true
 do
-    echo · Started CFM ·
-    python src/app.py
-    echo · Stopped CFM ·
+    echo "🚀 Starting CFM..."
+    $PYTHON_BIN src/app.py
+    echo "💥 CFM crashed. Restarting in 3 seconds..."
     sleep 3
 done

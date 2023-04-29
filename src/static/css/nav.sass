@@ -6,10 +6,10 @@ nav
 
     >.logo
         stroke: $accent
-        min-height: 48px
-        min-width: 48px
-        height: 48px
-        width: 48px
+        min-height: 40px
+        min-width: 40px
+        height: 40px
+        width: 40px
 
         margin-right: 8px
         cursor: pointer
@@ -17,7 +17,7 @@ nav
 
     >h1
         font-weight: 500
-        font-size: 24px
+        font-size: 20px
         user-select: none
         cursor: pointer
 
@@ -31,11 +31,12 @@ nav
         flex-grow: 1
 
     #links
-
         >a
+            font-size: 14px
+            font-weight: 600
             margin-left: 2rem
             text-decoration: none
-            transition: color 0.2s
+            transition: color 0.1s
 
             &:hover
                 color: $accent
@@ -62,7 +63,7 @@ nav
             padding: 1rem 0
             border-radius: $edge
             backdrop-filter: blur(4px)
-            border: 1px solid $boder
+            border: 1px solid $border
 
             transition: transform 0.2s, opacity 0.2s
 

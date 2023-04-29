@@ -5,24 +5,112 @@
 <script src="/static/js/particles.js"></script>
 
 <header>
-    <h2>Exchange Crypto for Gift Cards</h2>
+    <h1>Exchange Crypto for Gift Cards</h1>
     <p>
-        CryptoForMe is a service that allows you to exchange your crypto for gift cards.
+        CryptoForMe is1 a service that allows you to exchange your crypto for gift cards.
         We focus on privacy and security, and transparency. Thus, this project is open source.
     </p>
-
+    
     <div class="buttons">
-        <a href="/#get-started">
+        <a href="/gift-card-to-crypto">
             <button tabindex="-1">Get started</button>
         </a>
-        <a href="/#faq">
+        <a href="/#why">
             <button class="secondary" tabindex="-1">Learn more</button>
         </a>
     </div>
 </header>
 <main>
-    <h1>Coming soon</h1>
-    <h2>stay hyped.</h2>
+    <h2>Coming soon</h2>
+    <p>
+        This project is still in development. We are working hard to get it ready for release.
+        You can help us by suggesting new features or adding "pull requests" on
+        <a href="https://github.com/crypto-for-me/web" target="_blank">our GitHub repository</a>.
+    </p>
+
+
+    <div class="countdown">
+        <div class="content">
+            <h2>Release</h2>
+            <p aria-label="Time until release" id="releaseDt">Please enable JavaScript.</p>
+            <div class="counters">
+                <div class="counter">
+                    <span class="value" id="days">?</span>
+                    <span class="label">days</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="hours">?</span>
+                    <span class="label">hours</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="minutes">?</span>
+                    <span class="label">minutes</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="seconds">?</span>
+                    <span class="label">seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/countdown.js"></script>
+
+    <h2 id="why">Why CryptoForMe?</h2>
+
+    <div class="fields">
+        <section class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                <path d="M3.6 9h16.8"></path>
+                <path d="M3.6 15h16.8"></path>
+                <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+                <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+             </svg>
+            <h3>Decentralized</h3>
+            <p>
+                Crypto currencies are decentralized, which allows for people in authoritarian regimes (especially journalists)
+                to pay without the government being able to trace it back easily.
+            </p>
+        </section>
+        
+        <section class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-spy" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 11h18"></path>
+                <path d="M5 11v-4a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3v4"></path>
+                <path d="M7 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                <path d="M17 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                <path d="M10 17h4"></path>
+            </svg>
+            <h3>Private</h3>
+            <p>
+                Privacy is a <a href="https://www.un.org/en/about-us/universal-declaration-of-human-rights" target="_blank">human right</a>.
+                A lot of popular cryptocurrency exchange platforms are
+                <a href="https://www.coinbase.com/blog/introducing-coinbase-open-source-fund" target="_blank">closed source</a>
+                and contain a lot of <a href="https://reports.exodus-privacy.eu.org/en/reports/com.coinbase.android/latest/" target="_blank">trackers</a>.
+                CryptoForMe, is open source and is much more privacy-friendly because we believe that everyone should be able to pay without being tracked.
+            </p>        
+        </section>
+    
+        <section class="field">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shield-dollar" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M13.018 20.687c-.333 .119 -.673 .223 -1.018 .313a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3c.433 1.472 .575 2.998 .436 4.495"></path>
+                <path d="M21 15h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5"></path>
+                <path d="M19 21v1m0 -8v1"></path>
+             </svg>
+            <h3>Secure</h3>
+            <p>
+                It's not rare for
+                <a href="https://firewalltimes.com/amazon-data-breach-timeline/" target="_blank">Amazon</a>
+                or
+                <a href="https://www.forbes.com/sites/daveywinder/2023/01/19/thousands-of-paypal-accounts-hacked-is-yours-one-of-them/" target="_blank">PayPal</a>
+                accounts to get hacked. Most crypto currencies, on the other hand, have strong security measures and allow their users to own multiple wallets.
+            </p>
+        </section>
+    </div>
+
 </main>
 
 {% include 'components/end.html' %}

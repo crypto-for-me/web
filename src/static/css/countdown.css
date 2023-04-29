@@ -1,0 +1,59 @@
+div.countdown {
+  display: flex;
+  align-items: center;
+}
+div.countdown div.content {
+  margin-inline: auto;
+  margin-block: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(27, 31, 55, 0.9333333333);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  backdrop-filter: blur(8px);
+  border: 1px solid #d979f9;
+}
+div.countdown div.content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+div.countdown div.content p {
+  margin: 0.5rem;
+}
+div.countdown div.content div.counters {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+div.countdown div.content div.counters div.counter {
+  padding-inline: 1rem;
+}
+div.countdown div.content div.counters div.counter span.value {
+  font-size: 48px;
+  font-weight: 600;
+  display: block;
+}
+div.countdown div.content div.counters div.counter span.label {
+  font-size: 24px;
+  font-weight: 300;
+}
+div.countdown div.content:hover {
+  filter: brightness(1.05);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  div.countdown span.value {
+    font-size: 26px !important;
+  }
+  div.countdown span.label {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 400px) {
+  div.countdown div.counters {
+    display: block;
+  }
+}/*# sourceMappingURL=countdown.css.map */

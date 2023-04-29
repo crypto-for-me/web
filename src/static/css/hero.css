@@ -1,20 +1,22 @@
 header {
-  max-width: 800px;
+  max-width: 1280px;
   margin: 0 auto;
+  padding-block: 4rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-header h2 {
+header h1 {
+  max-width: 1000px;
   font-size: 64px;
   font-weight: 800;
   margin: 2rem;
   line-height: 1.1;
 }
 header p {
-  max-width: 80%;
+  max-width: 800px;
   opacity: 0.8;
   font-size: 1.2rem;
   font-weight: 300;
@@ -26,7 +28,34 @@ header div.buttons {
   margin: 1rem 0;
 }
 
+div.fields {
+  display: flex;
+  flex: 1 1 0px;
+  gap: 4rem;
+}
+div.fields section.field {
+  flex: 1;
+  flex-basis: 0;
+}
+div.fields section.field svg {
+  display: inline;
+  stroke: #d979f9;
+  transform: translateX(-0.2rem) translateY(0.7rem);
+}
+div.fields section.field h3 {
+  text-align: center;
+  display: inline;
+  font-size: 20px;
+  margin: 0;
+}
+div.fields section.field p {
+  opacity: 0.9;
+}
+
 @media (max-width: 800px) {
+  div.fields {
+    display: block;
+  }
   header h2 {
     font-size: 46px;
   }

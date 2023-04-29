@@ -1,8 +1,9 @@
 @import '_vars'
 
 header
-    max-width: 800px
+    max-width: $main-width
     margin: 0 auto
+    padding-block: 4rem
 
     text-align: center
 
@@ -11,14 +12,15 @@ header
     justify-content: center
     align-items: center
 
-    h2
+    h1
+        max-width: 1000px
         font-size: 64px
         font-weight: 800
         margin: 2rem
         line-height: 1.1
 
     p
-        max-width: 80%
+        max-width: 800px
         opacity: 0.8
         font-size: 1.2rem
         font-weight: 300
@@ -29,7 +31,33 @@ header
         gap: 1rem
         margin: 1rem 0
 
+div.fields
+    display: flex
+    flex: 1 1 0px
+    gap: 4rem
+
+    section.field
+        flex: 1
+        flex-basis: 0
+
+        svg
+            display: inline
+            stroke: $accent
+            transform: translateX(-0.2rem) translateY(0.7rem)
+
+        h3
+            text-align: center
+            display: inline
+            font-size: 20px
+            margin: 0
+
+        p
+            opacity: 0.9
+
 @media (max-width: 800px)
+    div.fields
+        display: block
+
     header
         h2
             font-size: 46px

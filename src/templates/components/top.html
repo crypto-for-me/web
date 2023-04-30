@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% for css in 'hero main nav input footer countdown choices'.split() %}
+    {% for css in 'hero main nav input footer countdown choices alerts nojs'.split() %}
     <link href="/static/css/{{ css }}.css" rel="stylesheet">
     {% endfor %}
 
-    <link rel="icon" href="/static/img/favicon-dark.png">
-    <link rel="icon" href="/static/img/favicon.png" media="(prefers-color-scheme:dark)">
+    <link rel="icon" href="/static/img/favicon.png">
+    <link rel="icon" href="/static/img/favicon-light.png" media="(prefers-color-scheme:dark)">
 
     <script src="/static/js/menu.js"></script>
     <link rel="stylesheet" href="/static/fonts/inter/inter.css">

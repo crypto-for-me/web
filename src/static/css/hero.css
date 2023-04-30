@@ -32,21 +32,28 @@ div.fields {
   display: flex;
   flex: 1 1 0px;
   gap: 4rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background: #171e38;
 }
 div.fields section.field {
   flex: 1;
   flex-basis: 0;
+  position: relative;
+  margin-bottom: 1rem;
 }
 div.fields section.field svg {
-  display: inline;
-  stroke: #d979f9;
-  transform: translateX(-0.2rem) translateY(0.7rem);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  stroke: #212b4f;
+  opacity: 0.5;
+  transform: scale(3) translate(-50%, -25%);
 }
 div.fields section.field h3 {
   text-align: center;
-  display: inline;
   font-size: 20px;
-  margin: 0;
+  font-weight: 700;
 }
 div.fields section.field p {
   opacity: 0.9;

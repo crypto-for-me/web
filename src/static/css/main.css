@@ -38,6 +38,10 @@ main.wide {
   max-width: 1280px;
 }
 
+h2 {
+  margin-top: 2rem;
+}
+
 div.not-wide {
   max-width: 800px;
   margin: 0 auto;
@@ -71,4 +75,27 @@ blockquote {
 
 sup {
   color: #d979f9;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  padding: 1rem;
+  background: #171e38;
+  border-radius: 8px;
+}
+table th {
+  font-weight: normal;
+  text-align: left;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+table .special {
+  color: #d979f9;
+}
+table tr td {
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

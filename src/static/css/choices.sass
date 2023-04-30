@@ -2,11 +2,11 @@
 
 div.choices
     display: grid
-    grid-template-columns: repeat(4, 1fr)
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
     gap: 1rem
 
     div.choice
-        padding: 1rem
+        padding-block: 1rem
         border-radius: $edge
         background: $bg2
         border: 1px solid $border
@@ -19,14 +19,15 @@ div.choices
 
         &.active
             border-color: $accent
+            box-shadow: inset 0 0 0 1px $accent
 
         img
             width: 100%
             height: 50px
             filter: invert(1)
-            margin-bottom: 1rem
             user-select: none
 
         span
             opacity: 0.7
             user-select: none
+

@@ -8,13 +8,13 @@ div.countdown
         margin-inline: auto
         margin-block: 2rem
         padding: 1rem 2rem
-        background: $popup
+        background: $bg2
         border-radius: $edge
         text-align: center
         cursor: pointer
         transition: 0.3s
         backdrop-filter: blur(8px)
-        border: 1px solid $accent
+        border: 1px solid $border
 
         h2
             font-size: 32px
@@ -55,4 +55,4 @@ div.countdown
 @media (max-width: 400px)
     div.countdown
         div.counters
-            display: block
+            flex-wrap: wrap

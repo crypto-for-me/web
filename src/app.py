@@ -4,6 +4,7 @@ import flask
 import logging
 
 from dotenv import load_dotenv
+from datetime import datetime, timezone
 
 load_dotenv()
 app = flask.Flask(__name__)
@@ -13,7 +14,16 @@ log.disabled = True
 
 @app.route('/')
 def index():
-    return flask.render_template('index.html')
+    target_time = datetime(2023, 7, 7, 0, 0, 0, tzinfo=timezone.utc).timestamp() * 1000
+    formatted_time = '7/7/2023 0:00 AM'
+
+    time_diff = target_time - datetime.now(timezone.utc).timestamp() * 1000
+    days = int(time_diff / (1000 * 60 * 60 * 24))
+    hours = int(time_diff / (1000 * 60 * 60)) % 24
+    minutes = int(time_diff / (1000 * 60)) % 60
+    seconds = int(time_diff / 1000) % 60
+
+    return flask.render_template('index.html', formatted_time=formatted_time, days=days, hours=hours, minutes=minutes, seconds=seconds)
 
 @app.route('/imprint')
 def imprint():

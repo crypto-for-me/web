@@ -1,10 +1,10 @@
 div.choices {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
 }
 div.choices div.choice {
-  padding: 1rem;
+  padding-block: 1rem;
   border-radius: 8px;
   background: #171e38;
   border: 1px solid rgba(135, 135, 141, 0.3254901961);
@@ -17,12 +17,12 @@ div.choices div.choice:hover {
 }
 div.choices div.choice.active {
   border-color: #d979f9;
+  box-shadow: inset 0 0 0 1px #d979f9;
 }
 div.choices div.choice img {
   width: 100%;
   height: 50px;
   filter: invert(1);
-  margin-bottom: 1rem;
   user-select: none;
 }
 div.choices div.choice span {

@@ -1,13 +1,32 @@
 <nav>
-    <img alt="CryptoForMe Logo" aria-label="CryptoForMe Logo" class="logo" onclick="window.location.href = '/';" src="/static/img/favicon-light.png">
-    <h1 onclick="window.location.href = '/';">CryptoForMe
+    <img alt="CryptoForMe Logo" aria-label="CryptoForMe Logo" class="logo" src="/static/img/favicon-light.png">
+    <h1>CryptoForMe
         <mark>alpha</mark>
     </h1>
 
-    <!-- Empty space -->
+    <!-- Separator -->
     <span></span>
-
-    <div id="links">
+    
+    <div id="links" class="link-menu">
+        <noscript>
+            <style>
+                #noJSMenu {display: none}
+                
+                @media (max-width: 400px) {
+                    #noJSMenu {display: block !important}
+                    #menu {display: none !important}
+                }
+            </style>
+    
+            <details id="noJSMenu">
+                <summary>Menu</summary>
+                <div class="link-menu">
+                    <a href="/">Home</a>
+                    <a href="/#why">Why</a>
+                    <a href="mailto:{{ company.email }}">Contact</a>
+                </div>
+            </details>
+        </noscript>
         <a href="/">Home</a>
         <a href="/#why">Why</a>
         <a href="mailto:{{ company.email }}">Contact</a>

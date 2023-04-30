@@ -17,7 +17,7 @@ button
         color: $accent
         border: 1px solid $accent
 
-input
+input:not([type="checkbox"]):not([type="radio"])
     color: $fg
     width: 100%
     font-size: 18px
@@ -28,3 +28,6 @@ input
 
     &:focus
         outline: none
+
+input[type="radio"]
+    filter: hue-rotate(50deg)

@@ -35,21 +35,29 @@ div.fields
     display: flex
     flex: 1 1 0px
     gap: 4rem
+    padding: 1rem 2rem
+    border-radius: $edge
+    background: $bg2
 
     section.field
         flex: 1
         flex-basis: 0
+        position: relative
+        margin-bottom: 1rem
 
         svg
-            display: inline
-            stroke: $accent
-            transform: translateX(-0.2rem) translateY(0.7rem)
+            position: absolute
+            bottom: 0
+            right: 0
+            stroke: $bg3
+            opacity: 0.5
+            transform: scale(3) translate(-50%, -25%)
 
         h3
             text-align: center
-            display: inline
             font-size: 20px
-            margin: 0
+            font-weight: 700
+            // text-transform: uppercase
 
         p
             opacity: 0.9

@@ -16,7 +16,7 @@ button.secondary {
   border: 1px solid #d979f9;
 }
 
-input {
+input:not([type=checkbox]):not([type=radio]) {
   color: #fcfdfd;
   width: 100%;
   font-size: 18px;
@@ -25,6 +25,10 @@ input {
   padding: 0.5rem 1rem;
   border: 1px solid #d979f9;
 }
-input:focus {
+input:not([type=checkbox]):not([type=radio]):focus {
   outline: none;
+}
+
+input[type=radio] {
+  filter: hue-rotate(50deg);
 }/*# sourceMappingURL=input.css.map */

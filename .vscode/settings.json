@@ -21,7 +21,11 @@
         "src/static/css/countdown.css.map": true,
         "src/static/css/countdown.css": true,
         "src/static/css/choices.css": true,
-        "src/static/css/choices.css.map": true
+        "src/static/css/choices.css.map": true,
+        "src/static/css/alerts.css": true,
+        "src/static/css/alerts.css.map": true,
+        "src/static/css/nojs.css.map": true,
+        "src/static/css/nojs.css": true
     },
     "hide-files.files": [
         "src/package-lock.json",
@@ -39,7 +43,11 @@
         "src/static/css/countdown.css.map",
         "src/static/css/countdown.css",
         "src/static/css/choices.css",
-        "src/static/css/choices.css.map"
+        "src/static/css/choices.css.map",
+        "src/static/css/alerts.css",
+        "src/static/css/alerts.css.map",
+        "src/static/css/nojs.css.map",
+        "src/static/css/nojs.css"
     ],
     "svg.preview.background": "dark-transparent"
 }

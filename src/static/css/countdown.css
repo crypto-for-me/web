@@ -6,13 +6,13 @@ div.countdown div.content {
   margin-inline: auto;
   margin-block: 2rem;
   padding: 1rem 2rem;
-  background: rgba(27, 31, 55, 0.9333333333);
+  background: #171e38;
   border-radius: 8px;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
   backdrop-filter: blur(8px);
-  border: 1px solid #d979f9;
+  border: 1px solid rgba(135, 135, 141, 0.3254901961);
 }
 div.countdown div.content h2 {
   font-size: 32px;
@@ -54,6 +54,6 @@ div.countdown div.content:hover {
 }
 @media (max-width: 400px) {
   div.countdown div.counters {
-    display: block;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=countdown.css.map */

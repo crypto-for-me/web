@@ -1,0 +1,14 @@
+div.alert {
+  padding: 1rem;
+  border-left: 5px solid rgba(85, 85, 255, 0.2196078431);
+  background: #171e38;
+}
+div.alert.error {
+  border-left: 3px solid rgba(255, 85, 85, 0.137254902);
+}
+div.alert.warning {
+  border-left: 3px solid rgba(255, 255, 85, 0.1803921569);
+}
+div.alert.success {
+  border-left: 3px solid rgba(85, 255, 85, 0.1803921569);
+}/*# sourceMappingURL=alerts.css.map */

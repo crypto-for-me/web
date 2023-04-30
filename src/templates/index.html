@@ -21,6 +21,31 @@
     </div>
 </header>
 <main class="wide">
+    <div class="countdown">
+        <div class="content">
+            <h2>Release</h2>
+            <p aria-label="Time until release" id="releaseDt">{{ formatted_time }}</p>
+            <div class="counters">
+                <div class="counter">
+                    <span class="value" id="days">{{ days }}</span>
+                    <span class="label">days</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="hours">{{ hours }}</span>
+                    <span class="label">hours</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="minutes">{{ minutes }}</span>
+                    <span class="label">minutes</span>
+                </div>
+                <div class="counter">
+                    <span class="value" id="seconds">{{ seconds }}</span>
+                    <span class="label">seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="not-wide">
         <h2>Coming soon</h2>
         <p>
@@ -30,33 +55,11 @@
         </p>
     </div>
 
-    <div class="countdown">
-        <div class="content">
-            <h2>Release</h2>
-            <p aria-label="Time until release" id="releaseDt">Please enable JavaScript.</p>
-            <div class="counters">
-                <div class="counter">
-                    <span class="value" id="days">?</span>
-                    <span class="label">days</span>
-                </div>
-                <div class="counter">
-                    <span class="value" id="hours">?</span>
-                    <span class="label">hours</span>
-                </div>
-                <div class="counter">
-                    <span class="value" id="minutes">?</span>
-                    <span class="label">minutes</span>
-                </div>
-                <div class="counter">
-                    <span class="value" id="seconds">?</span>
-                    <span class="label">seconds</span>
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="/static/js/countdown.js"></script>
 
-    <h2 id="why">Why CryptoForMe?</h2>
+    <div class="not-wide">
+        <h2 id="why">Why CryptoForMe?</h2>
+    </div>
 
     <div class="fields">
         <section class="field">
@@ -110,6 +113,77 @@
                 accounts to get hacked. Most crypto currencies, on the other hand, have strong security measures and allow their users to own multiple wallets.
             </p>
         </section>
+    </div>
+
+    <div class="not-wide">
+        <h2>How does CryptoForMe compare?</h2>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th></th>
+                    <th class="special">CryptoForMe</th>
+                    <th>LocalMonero/AgoraDesk</th>
+                    <th>Paxful</th>
+                </tr>
+                <tr>
+                    <td>Open Source</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Hidden Service</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>JavaScript-Free Version</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>No CloudFlare</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                </tr>
+                <!-- <tr>
+                    <td>I2P</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                </tr> -->
+                <tr>
+                    <td>Free of trackers</td>
+                    <td>✅</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Numerous gift cards</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Numerous crypto currencies</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                </tr>
+                <tr>
+                    <td>Transparent about earnings</td>
+                    <td>✅</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                </tr>
+            </table>
+        </div>
+        <p>
+            Feel free to contact us if you feel like this table is inaccurate/biased.
+        </p>
     </div>
 
 </main>

@@ -1,6 +1,7 @@
 nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 nav > .logo {
   stroke: #d979f9;
@@ -9,14 +10,12 @@ nav > .logo {
   height: 40px;
   width: 40px;
   margin-right: 8px;
-  cursor: pointer;
   transition: stroke 0.2s;
 }
 nav > h1 {
   font-weight: 500;
   font-size: 20px;
   user-select: none;
-  cursor: pointer;
 }
 nav > h1 mark {
   font-size: 1rem;
@@ -26,26 +25,24 @@ nav > h1 mark {
 nav > span {
   flex-grow: 1;
 }
-nav #links > a {
+nav #menu {
+  display: none;
+  cursor: pointer;
+}
+
+.link-menu > a {
   font-size: 14px;
   font-weight: 600;
   margin-left: 2rem;
   text-decoration: none;
   transition: color 0.1s;
 }
-nav #links > a:hover {
+.link-menu > a:hover {
   color: #d979f9;
-}
-nav #menu {
-  display: none;
-  cursor: pointer;
 }
 
 @media (max-width: 800px) {
-  nav .logo {
-    stroke: #fcfdfd;
-  }
-  nav #links {
+  .link-menu {
     transform: scale(0.8) translateX(1rem);
     opacity: 0;
     z-index: 100;
@@ -60,14 +57,17 @@ nav #menu {
     border: 1px solid rgba(135, 135, 141, 0.3254901961);
     transition: transform 0.2s, opacity 0.2s;
   }
-  nav #links.open {
+  .link-menu.open {
     opacity: 1;
     transform: inherit;
   }
-  nav #links a {
+  .link-menu a {
     font-size: 20px;
     display: block;
     line-height: 3rem;
+  }
+  nav .logo {
+    stroke: #fcfdfd;
   }
   nav #menu {
     display: block;

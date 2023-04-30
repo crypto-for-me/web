@@ -1,0 +1,8 @@
+{
+    "Amazon": "amazon",
+    "iTunes": "apple",
+    "Google Play": "google-play",
+    "Steam": "steam",
+    "PaySafe": "card",
+    "Other": "dots"
+}

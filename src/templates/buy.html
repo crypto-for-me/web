@@ -1,7 +1,43 @@
 {% include 'components/top.html' %}
 
 <main>
-    <h2>Buy {{ crypto_currency or 'crypto currency' }} with gift cards</h2>
+    <form method="POST">
+        <h1>Buy {{ crypto_currency or 'crypto currency' }} with gift cards</h1>
+        <h2>I have this gift card:</h2>
+        <div class="choices" id="giftCardChoice">
+            {% for name, id in gift_cards.items() %}
+            <div class="choice" data-gift-card="{{ id }}" onclick="chooseGiftCard(this);">
+                <img src="/static/img/icons/{{ id.lower() }}.svg" alt="{{ name }} icon">
+                <span>{{ name }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <h3>Code</h3>
+        <input id="giftCardCode" placeholder="Gift card code">
+    
+        <br>
+        <h2>And I want to receive:</h2>
+        <div class="choices" id="cryptoChoice">
+            {% for id, name in cryptos.items() %}
+            <div class="choice" data-crypto="{{ id }}" onclick="chooseCrypto(this);">
+                <img src="/static/img/icons/{{ id.lower() }}.svg" alt="{{ name }} icon">
+                <span>{{ name }}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <h3>Address</h3>
+        <input id="cryptoAddress" placeholder="Address which should receive">
+    
+        <br>
+        <p>
+            By continuing, you accept our
+            <a href="/terms">Terms of Service</a> and
+            <a href="/privacy">Privacy Policy</a>.
+        </p>
+
+        <button type="submit" id="buyButton">Accept and buy</button>
+    </form>
 </main>
+<script src="/static/js/buy.js"></script>
 
 {% include 'components/end.html' %}

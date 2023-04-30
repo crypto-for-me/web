@@ -1,6 +1,9 @@
 footer {
   padding-top: 4rem;
   margin: 4rem auto;
+  max-width: 800px;
+}
+footer.wide {
   max-width: 1280px;
 }
 footer div.rows {

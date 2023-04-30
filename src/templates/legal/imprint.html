@@ -1,0 +1,21 @@
+{% include 'components/top.html' %}
+
+<main>
+    <h1>Imprint (Impressum)</h1>
+    <p>As we operate in Germany, our Imprint is in German.</p>
+
+    <h3>Vertretungsberechtigt:</h3>
+    {{ company.ceo }} (Geschäftsführer)
+
+    <h3>Anschrift:</h3>
+    {{ company.address }}
+
+    </p>
+    <h2>Kontakt</h2>
+    <p>
+        <!-- Mobil: <a href="tel:+{{ company.tel }}">{{ company.telformatted }}</a> (bitte nur für rechtliche Anfragen!)<br> -->
+        E-Mail: <a href="mailto:{{ company.email }}">{{ company.email }}</a>
+    </p>
+</main>
+
+{% include 'components/end.html' %}

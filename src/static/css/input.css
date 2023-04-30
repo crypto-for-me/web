@@ -18,9 +18,13 @@ button.secondary {
 
 input {
   color: #fcfdfd;
-  font-size: 16px;
+  width: 100%;
+  font-size: 18px;
   background: #0f142a;
   border-radius: 8px;
   padding: 0.5rem 1rem;
   border: 1px solid #d979f9;
+}
+input:focus {
+  outline: none;
 }/*# sourceMappingURL=input.css.map */

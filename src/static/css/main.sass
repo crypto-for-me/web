@@ -31,9 +31,17 @@ main
     max-width: $main-width
     margin: 3rem auto
 
+    &.wide
+        max-width: $more-width
+
+div.not-wide
+    max-width: $main-width
+    margin: 0 auto
+
 header, main, footer
-    p
-        line-height: 1.8rem
+    p, li, blockquote
+        font-size: 16px
+        line-height: 28px
 
 mark
     background: $accent
@@ -45,3 +53,13 @@ hr
     border: none
     border-bottom: 1px solid $border
     margin: 2rem 0
+
+blockquote
+    border-left: 4px solid $border
+    padding-left: 1rem
+    margin-left: 0
+    font-style: italic
+    opacity: 0.7
+
+sup
+    color: $accent

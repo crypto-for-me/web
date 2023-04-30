@@ -19,7 +19,9 @@
         "src/static/css/footer.css": true,
         "src/static/css/footer.css.map": true,
         "src/static/css/countdown.css.map": true,
-        "src/static/css/countdown.css": true
+        "src/static/css/countdown.css": true,
+        "src/static/css/choices.css": true,
+        "src/static/css/choices.css.map": true
     },
     "hide-files.files": [
         "src/package-lock.json",
@@ -35,6 +37,9 @@
         "src/static/css/footer.css",
         "src/static/css/footer.css.map",
         "src/static/css/countdown.css.map",
-        "src/static/css/countdown.css"
-    ]
+        "src/static/css/countdown.css",
+        "src/static/css/choices.css",
+        "src/static/css/choices.css.map"
+    ],
+    "svg.preview.background": "dark-transparent"
 }

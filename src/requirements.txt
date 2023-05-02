@@ -1,4 +1,4 @@
-Flask==2.3.1
+Flask==2.3.2
 python-dotenv==1.0.0
 stem==1.8.1
 flask-talisman
